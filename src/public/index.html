@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ChatApp </title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+
+<nav class="navbar-light bg-warning">
+  <a class="navbar-brand mx-auto" href="/">Chat Fullstack</a>
+</nav>
+
+<div class="container">
+  <div class="col-md-6 mt-4">
+    <div class="card">
+    <div class="card-header">
+      <h4>Comienza a hablar</h4>
+    </div>
+
+    <div id="chat" class="card-body">
+      <form id="message-form" class="card-footer">
+        <div class="input-group">
+          <input type="text" id="message" clas="form-control">
+          <input type="submit" class="btn btn-warning">
+        </div>
+      </form>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"> </script>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </body>
+</html>
