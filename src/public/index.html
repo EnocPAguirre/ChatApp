@@ -6,15 +6,31 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
   </head>
   <body>
 
 <nav class="navbar-light bg-warning">
-  <a class="navbar-brand mx-auto" href="/">Chat Fullstack</a>
+  <a class="navbar-brand mx-auto " href="/">Chat Fullstack</a>
 </nav>
 
-<div class="container">
-  <div class="col-md-6 mt-4">
+<div class="card col-md-4 mt-5 mx-auto" id="nickWrap" >
+  <div class="card-header">
+    <h3>Ingresa tu usuario </h3>
+  </div>
+  <p id="nickError"></p>
+  <div class="card-body">
+    <form id="nickForm" >
+      <input type="text" id="nickname" class="form-control">
+      <button type="submit" class="btn btn-warning mt-2"><i class="fas fa-arrow-alt-circle-right"></i> Enviar</button>
+    </form>
+  </div>
+</div>
+
+<div class="container" id="contenWrap">
+<div class="row">
+  <div class="col-md-6 offset-md-1 mt-4">
     <div class="card">
     <div class="card-header">
       <h4>Comienza a hablar</h4>
@@ -24,13 +40,24 @@
       <form id="message-form" class="card-footer">
         <div class="input-group">
           <input type="text" id="message" clas="form-control">
-          <input type="submit" class="btn btn-warning">
-        </div>
+          <button type="submit" class="btn btn-warning"><i class="fas fa-arrow-alt-circle-right"></i>Enviar</button>
+  </div>
       </form>
     </div>
 
   </div>
   </div>
+  <div class="card col-md-3 mt-4">
+    <div class="card-header">
+      <h3>Usuarios</h3>
+    </div>
+    <div class="card-body">
+      <div id="usernames">
+
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
